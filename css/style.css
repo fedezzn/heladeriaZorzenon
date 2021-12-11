@@ -37,6 +37,11 @@
     height: 4.688rem;
 }
 
+
+.header__icono img:hover{
+    transform: rotate(65deg);
+}
+
 .header__lista{
     display: flex;
     list-style: none;
@@ -50,6 +55,10 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
+}
+
+.header__item a:hover{
+    color:#b38a4c;
 }
 
 /* HERO SECTION */
@@ -76,16 +85,17 @@
 .btn{
     align-self: center;
     text-decoration: none;
-    background-color: #fff;
+    background-image: transparent;
     font-size: 1.438rem;
-    color: #000;
+    color: #fff;
     padding: 0.438rem 2.5rem;
     border-radius: 0.313rem;
+    border: solid;
 }
 
 .btn:hover{
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 /* PRIMERA SECTION */
@@ -159,6 +169,11 @@
     margin-top: 0.938rem;
 }
 
+.footer__icono img:hover{
+    transform: rotate(65deg);
+}
+
+
 .footer__lista{
     display: flex;
     list-style: none;
@@ -173,6 +188,10 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
+}
+
+.footer__item a:hover{
+    color:#b38a4c;
 }
 
 .footer__parrafo{
