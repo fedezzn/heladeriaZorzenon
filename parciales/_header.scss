@@ -1,0 +1,31 @@
+/* HEADER */
+.header{
+    grid-area: header;
+    background-color: #fefae0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 0.125rem solid black;
+    &__icono img{
+        width: 5rem;
+        height: 4.688rem;
+        &:hover{
+            transform: rotate(65deg);
+        }
+    }
+    &__lista{
+        display: flex;
+        list-style: none;
+    }
+    &__item{
+        padding: 0rem 1.25rem 0rem 0rem;
+        & a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            &:hover{
+                color:#b38a4c;
+            }
+        }
+    }
+}

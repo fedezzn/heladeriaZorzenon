@@ -1,0 +1,53 @@
+@import "vars";
+
+@media only screen and (max-width: 957px) { 
+    .body__index{ /* MOBILE INDEX */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5.3rem 43.44rem 41.3rem 41.3rem 41.3rem 41.3rem 18rem;
+    
+        grid-template-areas: "header"
+                             "hero"
+                             "primera__1"
+                             "primera__2"
+                             "segunda__2" 
+                             "segunda__1"
+                             "footer";
+    }
+
+    .header{
+        grid-area: header;
+        font-size: 0.85rem;
+    }
+    .hero{
+        grid-area: hero;
+    }
+    .hero__texto{
+        font-size: 3.5rem;
+    }
+    .primera__1{
+        grid-area: primera__1;
+    }
+    .primera__2{
+        grid-area: primera__2;
+    }
+    .segunda__1{
+        grid-area: segunda__1;
+    }
+
+    .segunda__2{
+        grid-area: segunda__2;
+    }
+    .footer{
+        grid-area: footer;
+        font-size: 0.65rem;
+    }
+
+    .hero__titulo--sobreNosotros{/* MOBILE SOBRE NOSOTROS */
+        color: #fff;
+        font-size: 2rem;
+        align-self: center;
+    }
+
+
+}
