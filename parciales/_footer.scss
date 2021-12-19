@@ -1,0 +1,40 @@
+@import "vars";
+
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    background-color: $colorFondo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0.125rem solid black;
+    font-size: 0.90rem;
+    &__icono img{
+        width: 5rem;
+        height: 4.688rem;
+        margin-top: 0.938rem;
+        &:hover{
+            transform: rotate(65deg);
+        }
+    }
+    &__lista{
+        display: flex;
+        list-style: none;
+        padding-bottom: 0.938rem;
+    }
+    &__item{
+        padding: 0rem 1.25rem 0rem 0rem;
+        & a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            &:hover{
+                color:#b38a4c;
+            }
+        }
+    }
+    &__parrafo{
+        text-align: center;
+        padding-bottom: 0.625rem;
+    }
+}

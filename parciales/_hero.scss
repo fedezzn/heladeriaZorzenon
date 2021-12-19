@@ -1,0 +1,36 @@
+/* HERO SECTION */
+.hero{
+    grid-area: hero;
+    background-color: white;
+    background: url(../img/hero_helado_4.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    &__texto{
+        margin-top: 6.25rem;
+        align-self: center;
+        font-size: 4.063rem;
+        color: white;
+    }
+}
+
+
+.btn{
+    align-self: center;
+    text-decoration: none;
+    background-image: transparent;
+    font-size: 1.438rem;
+    color: #fff;
+    padding: 0.438rem 2.5rem;
+    border-radius: 0.313rem;
+    border: solid;
+    &:hover{
+        background-color: #fff;
+        color: #000
+    }
+
+}

@@ -1,0 +1,19 @@
+@import "vars";
+
+/* DESKTOP INDEX */
+.body__index{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: 5.3rem 43.44rem 41.3rem 41.3rem 18rem;*/
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "header header"
+                         "hero hero"
+                         "primera__1 primera__2"
+                         "segunda__1 segunda__2"
+                         "footer footer";
+}
+
+.fuente{
+    font-family:$fuente;
+}
