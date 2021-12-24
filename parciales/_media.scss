@@ -44,7 +44,7 @@
     }
 
     .hero__titulo--sobreNosotros{/* MOBILE SOBRE NOSOTROS */
-        color: #fff;
+        color: map-get($colores, blanco);
         font-size: 2rem;
         align-self: center;
     }

@@ -3,15 +3,14 @@
 /* FOOTER */
 .footer{
     grid-area: footer;
-    background-color: $colorFondo;
+    background-color: map-get($colores, crema);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 0.125rem solid black;
+    border: 0.125rem solid map-get($colores, negro);
     font-size: 0.90rem;
     &__icono img{
-        width: 5rem;
-        height: 4.688rem;
+        @include medidas(5rem, 4.688rem);
         margin-top: 0.938rem;
         &:hover{
             transform: rotate(65deg);
@@ -27,9 +26,9 @@
         & a{
             text-decoration: none;
             text-transform: uppercase;
-            color: #000;
+            color: map-get($colores, negro);
             &:hover{
-                color:#b38a4c;
+                color: map-get($colores, marron);
             }
         }
     }
