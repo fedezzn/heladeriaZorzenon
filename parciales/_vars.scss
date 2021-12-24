@@ -1,2 +1,14 @@
-$colorFondo:#fefae0;
 $fuente:  'Shippori Antique', sans-serif;
+
+$colores: (
+  crema: #fefae0,
+  marron: #b38a4c,
+  blanco: #fff,
+  negro: #000,
+  verde: #1fa2 
+);
+
+@mixin medidas($width, $height) {
+  height: $height;
+  width: $width;
+}

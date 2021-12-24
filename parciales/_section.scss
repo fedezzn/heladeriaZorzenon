@@ -1,27 +1,35 @@
+@import "vars";
 /* PRIMERA SECTION */
 .primera__1{
     grid-area: primera__1;
-    width: 100%;
-    height: 100%;
+    @include medidas(100%, 100%);
     overflow: hidden;
 }
 
 .primera__2{
     grid-area: primera__2;
     display: flex;
-    text-align: center;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.primera__titulo{
+
+.titulo{
     padding-top: 13vh;
+ 
+}
+
+.primera__titulo{
+    @extend .titulo;
+    color: map-get($colores, marron);
+
 }
 
 .primera__texto{
     padding: 15vh 20vh;
     font-size: 0.813rem;
+    text-align: center;
 }
 
 /* SEGUNDA SECTION */
@@ -29,24 +37,24 @@
 .segunda__1{
     grid-area: segunda__1;
     display: flex;
-    text-align: center;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .segunda__titulo{
-    padding-top: 13vh;
+    @extend .titulo;
+    color: map-get($colores, marron);
 }
 
 .segunda__texto{
     padding: 15vh 20vh;
     font-size: 0.813rem;
+    text-align: center;
 }
 
 .segunda__2{
     grid-area: segunda__2;
-    width: 100%;
-    height: 100%;
+    @include medidas(100%, 100%);
     overflow: hidden;
 }

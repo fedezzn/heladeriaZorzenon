@@ -1,3 +1,5 @@
+@import "vars";
+
 /* DESKTOP SOBRE NOSOTROS 32.44rem*/
 .body__sobreNosotros{
     display: grid;
@@ -12,17 +14,16 @@
 
 .heroSobreNosotros{
     grid-area: heroSobreNosotros;
-    background-color: #b38a4c;
+    background-color: map-get($colores, marron);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 2px solid #000;
-    height: 32.44rem;
-    width: 100%;
+    border-bottom: 2px solid map-get($colores, negro);
+    @include medidas(100%, 32.44rem);
 }
 
 .hero__titulo--sobreNosotros{
-    color: #fff;
+    color: map-get($colores, blanco);
     font-size: 3.5rem;
     align-self: center;
 }
@@ -33,8 +34,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    @include medidas(100%, 100%);
     &__titulo{
         padding: 4rem 0rem;
     }

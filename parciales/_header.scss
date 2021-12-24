@@ -1,14 +1,14 @@
+@import "vars";
 /* HEADER */
 .header{
     grid-area: header;
-    background-color: #fefae0;
+    background-color: map-get($colores, crema);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border: 0.125rem solid black;
+    border: 0.125rem solid map-get($colores, negro);
     &__icono img{
-        width: 5rem;
-        height: 4.688rem;
+        @include medidas(5rem, 4.688rem);
         &:hover{
             transform: rotate(65deg);
         }
@@ -22,9 +22,9 @@
         & a{
             text-decoration: none;
             text-transform: uppercase;
-            color: #000;
+            color: map-get($colores, negro);
             &:hover{
-                color:#b38a4c;
+                color: map-get($colores, marron);
             }
         }
     }
